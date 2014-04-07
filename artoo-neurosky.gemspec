@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = "artoo-neurosky"
   s.version     = Artoo::Neurosky::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Your name here"]
-  s.email       = ["your email here"]
-  s.homepage    = "Your homepage here"
-  s.license     = "Your License Here"
+  s.authors     = ["Ron Evans"]
+  s.email       = ["artoo@hybridgroup.com"]
+  s.homepage    = "https://github.com/hybridgroup/artoo-neurosky"
+  s.license     = "Apache 2.0"
   s.summary     = %q{Artoo adaptor and driver for Neurosky}
   s.description = %q{Artoo adaptor and driver for Neurosky}
 
@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'artoo', '>= 1.6.2'
+  s.add_runtime_dependency 'artoo', '>= 1.6.4'
+  s.add_runtime_dependency 'mindset'
   # TODO: add your development dependencies here
   # EXAMPLE:
   # s.add_development_dependency 'minitest', '>= 5.0'
