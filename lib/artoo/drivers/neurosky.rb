@@ -55,14 +55,6 @@ module Artoo
           puts packet.inspect
         end
       end
-
-
-{:signal_quality=>200}
-{:delta=>7023617, :theta=>15294464, :lo_alpha=>15209472, :hi_alpha=>13321984, :lo_beta=>4527616, :hi_beta=>12073472, :lo_gamma=>862464, :mid_gamma=>13637632}
-{:attention=>0}
-{:meditation=>0}
-
-
     end
   end
 end

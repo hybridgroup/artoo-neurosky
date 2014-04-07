@@ -3,7 +3,7 @@ PATH
   specs:
     artoo-neurosky (0.1.0)
       artoo (>= 1.6.4)
-      mindset
+      hybridgroup-mindset
 
 GEM
   remote: http://rubygems.org/
@@ -27,8 +27,8 @@ GEM
     http (0.5.0)
       http_parser.rb
     http_parser.rb (0.6.0)
+    hybridgroup-mindset (0.3)
     method_source (0.8.2)
-    mindset (0.2)
     multi_json (1.9.2)
     nio4r (1.0.0)
     pry (0.9.12.6)

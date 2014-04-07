@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency 'artoo', '>= 1.6.4'
-  s.add_runtime_dependency 'mindset'
+  s.add_runtime_dependency 'hybridgroup-mindset'
   # TODO: add your development dependencies here
   # EXAMPLE:
   # s.add_development_dependency 'minitest', '>= 5.0'
