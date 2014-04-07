@@ -37,27 +37,21 @@ module Artoo
       def handle_packet(packet)
         case
         when packet[:wave]
-          publish(event_topic_name("update"), "wave", packet[:wave])
-          publish(event_topic_name("wave"), packet[:wave]) 
-        
+          publish(event_topic_name("wave"), packet[:wave])
+
         when packet[:signal_quality]
-          publish(event_topic_name("update"), "signal_quality", packet[:signal_quality])
           publish(event_topic_name("signal_quality"), packet[:signal_quality])
 
         when packet[:attention]
-          publish(event_topic_name("update"), "attention", packet[:attention])
           publish(event_topic_name("attention"), packet[:attention])
 
         when packet[:meditation]
-          publish(event_topic_name("update"), "meditation", packet[:meditation])
           publish(event_topic_name("meditation"), packet[:meditation])
 
         when packet[:blink]
-          publish(event_topic_name("update"), "blink", packet[:blink])
           publish(event_topic_name("blink"), packet[:blink])
 
         when packet[:delta]
-          publish(event_topic_name("update"), "eeg", packet)
           publish(event_topic_name("eeg"), packet)
 
         else
