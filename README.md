@@ -1,4 +1,4 @@
-# Artoo Adaptor For Sphero
+# Artoo Adaptor For Neurosky Mindwave
 
 This repository contains the Artoo (http://artoo.io/) adaptor for the Neurosky Mindwave Mobile EEG (http://store.neurosky.com/products/mindwave-mobile).
 
