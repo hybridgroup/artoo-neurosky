@@ -22,9 +22,4 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'artoo', '>= 1.6.4'
   s.add_runtime_dependency 'hybridgroup-mindset'
-  # TODO: add your development dependencies here
-  # EXAMPLE:
-  # s.add_development_dependency 'minitest', '>= 5.0'
-  # s.add_development_dependency 'minitest-happy'
-  # s.add_development_dependency 'mocha', '>= 0.14.0'
 end

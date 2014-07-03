@@ -14,12 +14,6 @@ For more information abut Artoo, check out our repo at https://github.com/hybrid
 gem install artoo-neurosky
 ```
 
-Afterwards you need to install `socat` - for this please run the following command (works on both OSX and Linux):
-
-```
-artoo install socat
-```
-
 ## Using
 
 ```ruby
@@ -44,7 +38,6 @@ end
 
 The main steps are:
 - Pair your computer and the Mindwave
-- Use a socket to serial connection to map a TCP socket to the local unix port
 - Connect to the device via Artoo
 
 First pair your computer and Mindwave. You might be prompted for a passcode, if so enter '0000'.
@@ -55,11 +48,7 @@ Once paired, use the `artoo connect scan` command to find out your connection in
 $ artoo connect scan
 ```
 
-Now you are ready to connect to the Mindwave using the socket, in this example port 4567:
-
-```
-artoo connect serial /dev/rfcomm0 4567
-```
+Now you are ready to connect to the Mindwave using a serial connection.
 
 ### Ubuntu
 
@@ -85,11 +74,7 @@ Next, you need to bind the Mindawave to the system port. In the above example, /
 artoo connect bind 00:06:66:4A:14:99 /dev/rfcomm0
 ```
 
-Now you are ready to connect to the Sphero using the socket, in this example port 4567:
-
-```
-artoo connect serial /dev/rfcomm0 4567
-```
+Now you are ready to connect to the Sphero using system port.
 
 ### Windows
 
